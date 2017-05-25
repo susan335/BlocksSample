@@ -6,11 +6,51 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		EFE3EA621ED68D960057B749 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFE3EA5E1ED68D950057B749 /* Sample-Swift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EFE3EA491ED68D950057B749;
+			remoteInfo = "Sample-Swift";
+		};
+		EFE3EA8B1ED68DB40057B749 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFE3EA871ED68DB30057B749 /* Sample-ObjC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EFE3EA6D1ED68DB30057B749;
+			remoteInfo = "Sample-ObjC";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EFE3EA5E1ED68D950057B749 /* Sample-Swift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Sample-Swift.xcodeproj"; path = "Sample-Swift/Sample-Swift.xcodeproj"; sourceTree = "<group>"; };
+		EFE3EA871ED68DB30057B749 /* Sample-ObjC.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Sample-ObjC.xcodeproj"; path = "Sample-ObjC/Sample-ObjC.xcodeproj"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		EFE3E9E61ED68BED0057B749 = {
 			isa = PBXGroup;
 			children = (
+				EFE3EA871ED68DB30057B749 /* Sample-ObjC.xcodeproj */,
+				EFE3EA5E1ED68D950057B749 /* Sample-Swift.xcodeproj */,
 			);
+			sourceTree = "<group>";
+		};
+		EFE3EA5F1ED68D950057B749 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFE3EA631ED68D960057B749 /* Sample-Swift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFE3EA881ED68DB30057B749 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFE3EA8C1ED68DB40057B749 /* Sample-ObjC.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -30,11 +70,38 @@
 			);
 			mainGroup = EFE3E9E61ED68BED0057B749;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EFE3EA881ED68DB30057B749 /* Products */;
+					ProjectRef = EFE3EA871ED68DB30057B749 /* Sample-ObjC.xcodeproj */;
+				},
+				{
+					ProductGroup = EFE3EA5F1ED68D950057B749 /* Products */;
+					ProjectRef = EFE3EA5E1ED68D950057B749 /* Sample-Swift.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		EFE3EA631ED68D960057B749 /* Sample-Swift.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Sample-Swift.app";
+			remoteRef = EFE3EA621ED68D960057B749 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EFE3EA8C1ED68DB40057B749 /* Sample-ObjC.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Sample-ObjC.app";
+			remoteRef = EFE3EA8B1ED68DB40057B749 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin XCBuildConfiguration section */
 		EFE3E9EB1ED68BED0057B749 /* Debug */ = {
