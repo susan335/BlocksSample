@@ -12,7 +12,23 @@
 		EFE3EA521ED68D950057B749 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFE3EA501ED68D950057B749 /* Main.storyboard */; };
 		EFE3EA541ED68D950057B749 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFE3EA531ED68D950057B749 /* Assets.xcassets */; };
 		EFE3EA571ED68D950057B749 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFE3EA551ED68D950057B749 /* LaunchScreen.storyboard */; };
+		EFE3EAB21ED68F6F0057B749 /* libBlocks-ObjC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE3EAB11ED68F5A0057B749 /* libBlocks-ObjC.a */; };
+		EFE3EAB61ED68F6F0057B749 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE3EAB31ED68F6F0057B749 /* Accelerate.framework */; };
+		EFE3EAB71ED68F6F0057B749 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE3EAB41ED68F6F0057B749 /* AudioToolbox.framework */; };
+		EFE3EAB81ED68F6F0057B749 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE3EAB51ED68F6F0057B749 /* AVFoundation.framework */; };
+		EFE3EABA1ED68F750057B749 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE3EAB91ED68F750057B749 /* CoreMIDI.framework */; };
+		EFE3EAC41ED6B6200057B749 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE3EAC31ED6B6200057B749 /* libc++.tbd */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EFE3EAB01ED68F5A0057B749 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFE3EAAC1ED68F5A0057B749 /* Blocks-ObjC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2CA756F072F8F9884739BE50;
+			remoteInfo = "Blocks-ObjC - Static Library";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		EFE3EA491ED68D950057B749 /* Sample-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +38,14 @@
 		EFE3EA531ED68D950057B749 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFE3EA561ED68D950057B749 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFE3EA581ED68D950057B749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFE3EAAA1ED68F3D0057B749 /* libBlocks-ObjC.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libBlocks-ObjC.a"; path = "../Blocks-ObjC/Blocks-ObjC/Builds/iOS/build/Debug/libBlocks-ObjC.a"; sourceTree = "<group>"; };
+		EFE3EAAC1ED68F5A0057B749 /* Blocks-ObjC.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Blocks-ObjC.xcodeproj"; path = "../Blocks-ObjC/Blocks-ObjC/Builds/iOS/Blocks-ObjC.xcodeproj"; sourceTree = "<group>"; };
+		EFE3EAB31ED68F6F0057B749 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		EFE3EAB41ED68F6F0057B749 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		EFE3EAB51ED68F6F0057B749 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EFE3EAB91ED68F750057B749 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		EFE3EABB1ED68F9D0057B749 /* Sample-Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sample-Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		EFE3EAC31ED6B6200057B749 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +53,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFE3EAC41ED6B6200057B749 /* libc++.tbd in Frameworks */,
+				EFE3EABA1ED68F750057B749 /* CoreMIDI.framework in Frameworks */,
+				EFE3EAB61ED68F6F0057B749 /* Accelerate.framework in Frameworks */,
+				EFE3EAB71ED68F6F0057B749 /* AudioToolbox.framework in Frameworks */,
+				EFE3EAB81ED68F6F0057B749 /* AVFoundation.framework in Frameworks */,
+				EFE3EAB21ED68F6F0057B749 /* libBlocks-ObjC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +70,8 @@
 			children = (
 				EFE3EA4B1ED68D950057B749 /* Sample-Swift */,
 				EFE3EA4A1ED68D950057B749 /* Products */,
+				EFE3EAA91ED68F3D0057B749 /* Frameworks */,
+				EFE3EAAC1ED68F5A0057B749 /* Blocks-ObjC.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +92,30 @@
 				EFE3EA531ED68D950057B749 /* Assets.xcassets */,
 				EFE3EA551ED68D950057B749 /* LaunchScreen.storyboard */,
 				EFE3EA581ED68D950057B749 /* Info.plist */,
+				EFE3EABB1ED68F9D0057B749 /* Sample-Swift-Bridging-Header.h */,
 			);
 			path = "Sample-Swift";
+			sourceTree = "<group>";
+		};
+		EFE3EAA91ED68F3D0057B749 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFE3EAC31ED6B6200057B749 /* libc++.tbd */,
+				EFE3EAB91ED68F750057B749 /* CoreMIDI.framework */,
+				EFE3EAB31ED68F6F0057B749 /* Accelerate.framework */,
+				EFE3EAB41ED68F6F0057B749 /* AudioToolbox.framework */,
+				EFE3EAB51ED68F6F0057B749 /* AVFoundation.framework */,
+				EFE3EAAA1ED68F3D0057B749 /* libBlocks-ObjC.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EFE3EAAD1ED68F5A0057B749 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFE3EAB11ED68F5A0057B749 /* libBlocks-ObjC.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +151,7 @@
 					EFE3EA481ED68D950057B749 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 39DG2PRNPX;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -112,12 +167,28 @@
 			mainGroup = EFE3EA401ED68D950057B749;
 			productRefGroup = EFE3EA4A1ED68D950057B749 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EFE3EAAD1ED68F5A0057B749 /* Products */;
+					ProjectRef = EFE3EAAC1ED68F5A0057B749 /* Blocks-ObjC.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				EFE3EA481ED68D950057B749 /* Sample-Swift */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		EFE3EAB11ED68F5A0057B749 /* libBlocks-ObjC.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libBlocks-ObjC.a";
+			remoteRef = EFE3EAB01ED68F5A0057B749 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		EFE3EA471ED68D950057B749 /* Resources */ = {
@@ -261,11 +332,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 39DG2PRNPX;
+				HEADER_SEARCH_PATHS = (
+					"../Blocks-ObjC/Blocks-ObjC/Builds/iOS",
+					"../Blocks-ObjC/Blocks-ObjC/JuceLibraryCode",
+					"../Blocks-ObjC/Blocks-ObjC/JuceLibraryCode/modules",
+				);
 				INFOPLIST_FILE = "Sample-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.crypton.Sample-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sample-Swift/Sample-Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -274,11 +353,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 39DG2PRNPX;
+				HEADER_SEARCH_PATHS = (
+					"../Blocks-ObjC/Blocks-ObjC/Builds/iOS",
+					"../Blocks-ObjC/Blocks-ObjC/JuceLibraryCode",
+					"../Blocks-ObjC/Blocks-ObjC/JuceLibraryCode/modules",
+				);
 				INFOPLIST_FILE = "Sample-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.crypton.Sample-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sample-Swift/Sample-Swift-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

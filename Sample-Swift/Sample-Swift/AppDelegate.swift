@@ -9,38 +9,48 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, BlockFinderDelegate, BlockTouchDelegate {
 
     var window: UIWindow?
-
+    var sample = Sample()
+    var blocks: Blocks?
+    var gridLed: BlocksGridLED?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        self.sample.delegate = self
+        
         return true
     }
-
-    func applicationWillResignActive(_ application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+    
+    func findBlock(_ blocks: Blocks) {
+        self.blocks = blocks;
+        self.blocks?.touchDelegate = self;
+        self.gridLed = BlocksGridLED(blocks: blocks)
     }
-
-    func applicationDidEnterBackground(_ application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    
+    func touchChange(_ touches: [BlocksTouch]) {
+        print(#function)
+        
+        let colors = [UIColor.black, UIColor.red, UIColor.blue, UIColor.green, UIColor.white]
+        
+        let rowCount = 5
+        let colCount = 5
+        
+        var gridFills = [BlocksGridFill]()
+        for _ in 0..<rowCount {
+            for _ in 0..<colCount {
+                let fill = BlocksGridFill()
+                
+                let count = min(touches.count, colors.count-1)
+                fill.color = colors[count]
+                fill.type = BlocksGridFillType.filled
+                
+                gridFills.append(fill)
+            }
+        }
+        self.gridLed?.setGridFills(colCount, numRows: rowCount, fills: gridFills)
+        
     }
-
-    func applicationWillEnterForeground(_ application: UIApplication) {
-        // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
-    }
-
-    func applicationDidBecomeActive(_ application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    }
-
-    func applicationWillTerminate(_ application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-    }
-
-
 }
 
