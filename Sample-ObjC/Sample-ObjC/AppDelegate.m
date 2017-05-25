@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "Sample.h"
-#import "BlocksTouch.h"
+#import "Blocks.h"
 #import "BlocksGridLED.h"
 
 @interface AppDelegate () <BlockFinderDelegate, BlockTouchDelegate>
@@ -48,7 +48,7 @@
             
             BlocksGridFill *fill = [[BlocksGridFill alloc]init];
             
-            auto count = touches.count;
+            NSInteger count = touches.count;
             if (count >= colors.count) {
                 count = 0;
             }
