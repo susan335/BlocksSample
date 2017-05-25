@@ -8,24 +8,45 @@
 
 /* Begin PBXBuildFile section */
 		EFE3EA721ED68DB30057B749 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE3EA711ED68DB30057B749 /* main.m */; };
-		EFE3EA751ED68DB30057B749 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE3EA741ED68DB30057B749 /* AppDelegate.m */; };
+		EFE3EA751ED68DB30057B749 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = EFE3EA741ED68DB30057B749 /* AppDelegate.mm */; };
 		EFE3EA781ED68DB30057B749 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE3EA771ED68DB30057B749 /* ViewController.m */; };
 		EFE3EA7B1ED68DB30057B749 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFE3EA791ED68DB30057B749 /* Main.storyboard */; };
 		EFE3EA7D1ED68DB30057B749 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFE3EA7C1ED68DB30057B749 /* Assets.xcassets */; };
 		EFE3EA801ED68DB30057B749 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFE3EA7E1ED68DB30057B749 /* LaunchScreen.storyboard */; };
+		EFE3EAA41ED68E860057B749 /* libBlocks-ObjC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE3EAA31ED68E7A0057B749 /* libBlocks-ObjC.a */; };
+		EFE3EAA51ED68E890057B749 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE3EA961ED68E140057B749 /* Accelerate.framework */; };
+		EFE3EAA61ED68E8D0057B749 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE3EA981ED68E190057B749 /* AVFoundation.framework */; };
+		EFE3EAA71ED68E930057B749 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE3EA9C1ED68E220057B749 /* AudioToolbox.framework */; };
+		EFE3EAA81ED68E980057B749 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFE3EA9A1ED68E1E0057B749 /* CoreMIDI.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EFE3EAA21ED68E7A0057B749 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFE3EA9E1ED68E7A0057B749 /* Blocks-ObjC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2CA756F072F8F9884739BE50;
+			remoteInfo = "Blocks-ObjC - Static Library";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		EFE3EA6D1ED68DB30057B749 /* Sample-ObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sample-ObjC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFE3EA711ED68DB30057B749 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EFE3EA731ED68DB30057B749 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		EFE3EA741ED68DB30057B749 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EFE3EA741ED68DB30057B749 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		EFE3EA761ED68DB30057B749 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		EFE3EA771ED68DB30057B749 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EFE3EA7A1ED68DB30057B749 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EFE3EA7C1ED68DB30057B749 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFE3EA7F1ED68DB30057B749 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFE3EA811ED68DB30057B749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFE3EA941ED68E080057B749 /* libBlocks-ObjC.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libBlocks-ObjC.a"; path = "../Blocks-ObjC/Blocks-ObjC/Builds/iOS/build/Debug/libBlocks-ObjC.a"; sourceTree = "<group>"; };
+		EFE3EA961ED68E140057B749 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		EFE3EA981ED68E190057B749 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EFE3EA9A1ED68E1E0057B749 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		EFE3EA9C1ED68E220057B749 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		EFE3EA9E1ED68E7A0057B749 /* Blocks-ObjC.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Blocks-ObjC.xcodeproj"; path = "../Blocks-ObjC/Blocks-ObjC/Builds/iOS/Blocks-ObjC.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +54,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFE3EAA81ED68E980057B749 /* CoreMIDI.framework in Frameworks */,
+				EFE3EAA71ED68E930057B749 /* AudioToolbox.framework in Frameworks */,
+				EFE3EAA61ED68E8D0057B749 /* AVFoundation.framework in Frameworks */,
+				EFE3EAA51ED68E890057B749 /* Accelerate.framework in Frameworks */,
+				EFE3EAA41ED68E860057B749 /* libBlocks-ObjC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +70,8 @@
 			children = (
 				EFE3EA6F1ED68DB30057B749 /* Sample-ObjC */,
 				EFE3EA6E1ED68DB30057B749 /* Products */,
+				EFE3EA931ED68E080057B749 /* Frameworks */,
+				EFE3EA9E1ED68E7A0057B749 /* Blocks-ObjC.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,7 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				EFE3EA731ED68DB30057B749 /* AppDelegate.h */,
-				EFE3EA741ED68DB30057B749 /* AppDelegate.m */,
+				EFE3EA741ED68DB30057B749 /* AppDelegate.mm */,
 				EFE3EA761ED68DB30057B749 /* ViewController.h */,
 				EFE3EA771ED68DB30057B749 /* ViewController.m */,
 				EFE3EA791ED68DB30057B749 /* Main.storyboard */,
@@ -77,6 +105,26 @@
 				EFE3EA711ED68DB30057B749 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EFE3EA931ED68E080057B749 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFE3EA9C1ED68E220057B749 /* AudioToolbox.framework */,
+				EFE3EA9A1ED68E1E0057B749 /* CoreMIDI.framework */,
+				EFE3EA981ED68E190057B749 /* AVFoundation.framework */,
+				EFE3EA961ED68E140057B749 /* Accelerate.framework */,
+				EFE3EA941ED68E080057B749 /* libBlocks-ObjC.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EFE3EA9F1ED68E7A0057B749 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFE3EAA31ED68E7A0057B749 /* libBlocks-ObjC.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,12 +174,28 @@
 			mainGroup = EFE3EA641ED68DB30057B749;
 			productRefGroup = EFE3EA6E1ED68DB30057B749 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EFE3EA9F1ED68E7A0057B749 /* Products */;
+					ProjectRef = EFE3EA9E1ED68E7A0057B749 /* Blocks-ObjC.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				EFE3EA6C1ED68DB30057B749 /* Sample-ObjC */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		EFE3EAA31ED68E7A0057B749 /* libBlocks-ObjC.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libBlocks-ObjC.a";
+			remoteRef = EFE3EAA21ED68E7A0057B749 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		EFE3EA6B1ED68DB30057B749 /* Resources */ = {
@@ -152,7 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFE3EA781ED68DB30057B749 /* ViewController.m in Sources */,
-				EFE3EA751ED68DB30057B749 /* AppDelegate.m in Sources */,
+				EFE3EA751ED68DB30057B749 /* AppDelegate.mm in Sources */,
 				EFE3EA721ED68DB30057B749 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +338,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 39DG2PRNPX;
+				HEADER_SEARCH_PATHS = (
+					"../Blocks-ObjC/Blocks-ObjC/Builds/iOS",
+					"../Blocks-ObjC/Blocks-ObjC/JuceLibraryCode",
+					"../Blocks-ObjC/Blocks-ObjC/JuceLibraryCode/modules",
+				);
 				INFOPLIST_FILE = "Sample-ObjC/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.crypton.Sample-ObjC";
@@ -286,6 +355,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 39DG2PRNPX;
+				HEADER_SEARCH_PATHS = (
+					"../Blocks-ObjC/Blocks-ObjC/Builds/iOS",
+					"../Blocks-ObjC/Blocks-ObjC/JuceLibraryCode",
+					"../Blocks-ObjC/Blocks-ObjC/JuceLibraryCode/modules",
+				);
 				INFOPLIST_FILE = "Sample-ObjC/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.crypton.Sample-ObjC";
